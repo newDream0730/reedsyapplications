@@ -1,0 +1,162 @@
+body {
+  margin: 0; }
+
+div.top-actions {
+  background-color: #faf9f4;
+  display: flex;
+  justify-content: center; }
+  div.top-actions div.container {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box; }
+    div.top-actions div.container a.top-logo {
+      display: inline-block;
+      padding: 8px 70px;
+      background-color: #cccccc;
+      color: #727272;
+      font: bold 14px arial;
+      border-radius: 5px; }
+    div.top-actions div.container a.top-logo:hover {
+      background-color: #dddddd; }
+    div.top-actions div.container nav {
+      display: inline-flex;
+      float: right; }
+      div.top-actions div.container nav ul {
+        list-style-type: none;
+        margin: 0; }
+        div.top-actions div.container nav ul li {
+          display: inline-block; }
+          div.top-actions div.container nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #faf9f4;
+            color: #727272;
+            font: bold 14px arial;
+            border-radius: 5px; }
+          div.top-actions div.container nav ul li a:hover {
+            background-color: #dddddd; }
+        div.top-actions div.container nav ul li.active a {
+          background-color: #efc400;
+          color: white; }
+
+div.main {
+  background-color: #faf9f4;
+  display: flex;
+  justify-content: center; }
+  div.main div.container {
+    background-color: white;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 0 10px gray;
+    padding-bottom: 70px; }
+    div.main div.container h1 {
+      font: bold 50px arial;
+      padding: 0 20px; }
+    div.main div.container div.featured-book {
+      background-color: #faf9f4;
+      padding: 20px;
+      display: flex;
+      position: relative;
+      align-items: center; }
+      div.main div.container div.featured-book div.recommended {
+        background-color: #efc400;
+        color: white;
+        font-family: arial;
+        padding: 5px 10px;
+        border-radius: 0 0 0 10px;
+        position: absolute;
+        top: 0px;
+        right: 0px; }
+      div.main div.container div.featured-book img {
+        object-fit: contain;
+        width: 300px;
+        border-radius: 10px; }
+      div.main div.container div.featured-book div.book-info {
+        margin-left: 20px;
+        font-family: arial; }
+        div.main div.container div.featured-book div.book-info h2 {
+          font: bold 40px arial; }
+    div.main div.container div.top-voted {
+      padding: 20px; }
+      div.main div.container div.top-voted h2 {
+        font: bold 40px arial; }
+      div.main div.container div.top-voted div.books-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        div.main div.container div.top-voted div.books-list div.book {
+          min-width: 300px;
+          width: 30%;
+          padding: 15px;
+          background-color: #faf9f4;
+          position: relative;
+          text-align: center;
+          border-radius: 10px;
+          margin-bottom: 10px; }
+          div.main div.container div.top-voted div.books-list div.book span.position {
+            position: absolute;
+            color: #efc400;
+            font: bold 20px arial;
+            width: 30px;
+            height: 30px;
+            top: 10px;
+            right: 10px;
+            border: 3px solid #efc400;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+          div.main div.container div.top-voted div.books-list div.book > img {
+            height: 200px;
+            border-radius: 10px; }
+          div.main div.container div.top-voted div.books-list div.book div.book-info {
+            font-family: arial;
+            text-align: left; }
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%; }
+  footer div.container {
+    background-color: #292929; }
+    footer div.container nav ul {
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center; }
+      footer div.container nav ul li {
+        text-align: center;
+        padding: 20px 25px;
+        font-family: arial;
+        color: white; }
+      footer div.container nav ul li:hover {
+        background-color: #cccccc; }
+
+@media screen and (max-width: 900px) {
+  div.top-actions {
+    background-color: #faf9f4;
+    display: flex;
+    justify-content: center; }
+    div.top-actions div.container a.top-logo {
+      display: block;
+      text-align: center; }
+    div.top-actions div.container nav {
+      display: block;
+      float: none; }
+      div.top-actions div.container nav ul {
+        padding: 0; }
+        div.top-actions div.container nav ul li {
+          display: block; }
+          div.top-actions div.container nav ul li a {
+            text-align: center; }
+  div.main div.container div.featured-book {
+    flex-direction: column; }
+    div.main div.container div.featured-book img {
+      margin-top: 20px; }
+  div.main div.container div.top-voted div.books-list {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center; }
+    div.main div.container div.top-voted div.books-list div.book {
+      box-sizing: border-box;
+      width: 100%; } }

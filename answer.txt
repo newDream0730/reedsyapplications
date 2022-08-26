@@ -1,0 +1,48 @@
+1. About me
+  In my last company I mean when I was working on Phoenix Consultancy LLC I got a chance to work with V3 project.
+  It was a online casino gaming site and I used Vue3.js, Vuex and TypeScript technologies.
+  In this project my role was senior frontend developer.
+  Here is the link.
+  skbet101.com
+
+2.1. What kind of front end projects do you enjoy working on? Why?
+  I prefer to work with Single Page Application. 
+  I like it because of it's quick loading time, user-friendly, high-performance and so on. 
+  Single Page Applications are easy to learn and we can keep fast development speed.
+
+2.2. Which are your favorite features of HTML5? How have you used them before?
+
+  My favorite features of HTML5 are Audio and Video tags, and Figure and Figcaption tags.
+  
+  HTML5 video can use CSS and CSS3 to style the video tag and HTML5 makes adding video super-fast and without having to build a video player. This saves time for the me and offers the client a superior and more affordable solution.
+  
+  HTML5 allows to use a <figure> element to mark up a photo in a document, and a <figcaption> element to define a caption for a <figure> element. This tag provides a container for content that is equivalent to a figure so that they are very useful for the projects including many many images.
+
+  I have used these features especially Video tag to show the advertisments while I was working on my last company.
+
+2.3. Explain the difference between creating a DOM element setting innerHTML and using createElement.
+
+  1) createElement is more performant
+     Using the innerHTML causes the web browsers to reparse and recreate all DOM nodes inside the div element. Therefore, it is less efficient than creating a new element and appending to the div. In other words, creating a new element and appending it to the DOM tree provides better performance than the innerHTML.
+  2) createElement is more secure
+     You should use innerHTML only when the data comes from a trusted source like a database.
+     If you set the contents that you have no control over to the innerHTML, the malicious code may be injected and executed.
+  3) Using DocumentFragment for composing DOM Nodes
+     You can use a DocumentFragment to compose DOM nodes and append it to the DOM tree by using createElement.
+     Assuming that you have a list of elements and you need in each iteration, if you use innerHTML, your code results in recalculation of styles, painting, and layout every iteration. This is not very efficient. To overcome this, it is very efficient to use DocumentFragment.
+
+2.4. Compare two-way data binding vs one-way data flow.
+
+  In one-way data flow the view part of application does not updates automatically when data Model is changed. 
+  We need to write some custom code to make it updated every time a data model is changed. 
+  In Vue js v-bind is used for one-way data flow or binding.
+
+  In two-way data binding the view part of application automatically updates when data Model is changed. 
+  In Vue.js v-model directive is used for two way data binding.
+
+2.5. Why is asynchronous programming important in JavaScript?
+
+  Asynchronous programming makes it possible to express waiting for long-running actions without freezing the program during these actions.
+  Front end applications benefit from its use because it enhances the flow of an application. 
+  Backend processes may use asynchronous functions to run many tasks or make lots of network calls. 
+  In the backend, asynchronous programming allows the computer to do more, faster.
